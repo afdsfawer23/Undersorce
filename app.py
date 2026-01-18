@@ -23,7 +23,7 @@ HTML_TEMPLATE = '''
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Under002*:' - Enter the Archive</title>
+    <title>Underscore - Enter the Archive</title>
     <link rel="icon" href="{{ url_for('serve_logo') }}" type="image/png">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Roboto+Mono:wght@300;400;700&display=swap');
@@ -550,8 +550,8 @@ HTML_TEMPLATE = '''
         {% if 'user' in session %}
         <div class="header">
             <div class="header-left">
-                <img src="{{ url_for('serve_logo') }}" alt="Under002*:' Logo" class="logo">
-                <div class="site-title glitch">Under002*:'</div>
+                <img src="{{ url_for('serve_logo') }}" alt="Underscore Logo" class="logo">
+                <div class="site-title glitch">Underscore</div>
             </div>
             <div class="user-info">
                 <span class="user-label">IDENTITY: {{ session['user'] }}</span>
@@ -652,8 +652,8 @@ HTML_TEMPLATE = '''
 
         {% else %}
         <div class="login-container">
-            <img src="{{ url_for('serve_logo') }}" alt="Under002*:' Logo" class="login-logo">
-            <h2 class="glitch">Under002*:'</h2>
+            <img src="{{ url_for('serve_logo') }}" alt="Underscore Logo" class="login-logo">
+            <h2 class="glitch">Underscore</h2>
             <p class="login-subtitle">Classified Archive System</p>
             <form method="POST" action="{{ url_for('login') }}">
                 <div class="form-group">
